@@ -1,7 +1,10 @@
 import { useState } from 'react';
-import '../../style/auth.css';
+import { useAuth } from '../../context/AuthContext';
+import { useUser } from '../../context/UserContext';
 
 const LoginForm = () => {
+  const { login } = useAuth(); 
+  const { setUser } = useUser(); 
   const [formData, setFormData] = useState({
     username: '',
     password: ''
@@ -18,6 +21,10 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login submitted:', formData);
+
+    login(); 
+    setUser({ role: 'client', isLoggedIn: true }); 
+
   };
 
   return (
@@ -44,11 +51,14 @@ const LoginForm = () => {
         />
       </div>
 
-      <div className='forgot-pass-div'>
-        <p className='p-button'>Forgot password?</p>
+      <div>
+        <p className='p-button' id="forgot-pass-msg">Forgot Password?</p>
       </div>
       
-      <button type="submit">Log In</button>
+      {/*<button type="submit">Log In</button>*/}
+      <button onClick={() => {
+        login();
+      }}>Log in</button>
 
     </form>
   );

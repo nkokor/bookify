@@ -2,6 +2,9 @@
   text-align: center;
   font-size: 50px;
   font-family: "Londrina Sketch";
+  background: linear-gradient(to right, #d83c39, #ee588a, #7e57c2, #2196f3, #0ac4dd, #198e1f, #eafd16, #ec9509, #ff440b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .toggle-div {
@@ -20,8 +23,8 @@ form {
   margin: auto;
 }
 
-.auth-input-div {
-  font-family: "Raleway";
+.auth-input-div, button, p {
+  font-family: "Playfair Display";
 }
 
 .auth-input-div label {
@@ -70,7 +73,7 @@ form {
   opacity: 100%;
 }
 
-.forgot-pass-div p {
+#forgot-pass-msg {
   text-align: center;
 }
 

@@ -6,8 +6,7 @@ const RegistrationForm = () => {
     lastName: '',
     email: '',
     username: '',
-    password: '',
-    confirmPassword: ''
+    password: ''
   });
 
   const handleChange = (e) => {
@@ -75,17 +74,6 @@ const RegistrationForm = () => {
           type="password"
           name="password"
           value={formData.password}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      
-      <div className='auth-input-div'>
-        <label>Confirm Password:</label>
-        <input
-          type="password"
-          name="confirmPassword"
-          value={formData.confirmPassword}
           onChange={handleChange}
           required
         />

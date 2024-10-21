@@ -1,0 +1,158 @@
+#menu-div {
+  box-shadow: rgba(143, 49, 49, 0.044) 0px 2px 4px, rgba(26, 75, 60, 0.2) 0px 1px 2px;
+  display: flex;
+  align-items: center;
+  border-bottom-width: 5px;
+  border-color: rgb(99, 99, 99);
+  z-index: 8000;
+  position: fixed;
+  background-color: white;
+  height: 80px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+#logo-img {
+  height: 70px;
+  width: 100px;
+  padding: 7px;
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+.menu-item-link, #menu-div a.active {
+  text-decoration: none;
+  font-size: large;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+  font-family: "Playfair Display";
+}
+
+.menu-item-link {
+  font-weight: 400;
+  transition:  0.3s ease;
+}
+
+#menu-div a.active {
+  font-weight: 500;
+}
+
+.menu-item-link:hover {
+  color: rgb(98, 110, 113);
+}
+
+#menu-div a.active:hover {
+  cursor: default;
+  color: black;
+}
+
+#menu-icon-img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+  right: 20px;
+}
+
+@media screen and (max-width: 730px) {
+  #menu-icon-img {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+  .menu-item-link, .navbar {
+    display: none;
+  }
+}
+
+#side-menu-div {
+  display: flex;
+  top: 0px;
+  flex-direction: column;
+  padding-left: 0px;
+  width: 170px;
+  height: 100vh;
+  padding-top: 130px;
+  background-color: white;
+  position: fixed;
+  z-index: 450;
+  align-items: start;
+  box-shadow: rgba(143, 49, 49, 0.044) 0px 2px 4px, rgba(26, 75, 60, 0.2) 0px 1px 2px;
+}
+
+.side-opened-div {
+  right: 0px;
+  transition: 1.2s;
+}
+
+.side-closed-div {
+  right: -200px;
+  transition: 1.2s;
+}
+
+.side-menu-item-link {
+  text-decoration: none;
+  font-size: large;
+  font-family: "Playfair Display";
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.side-menu-item-link:hover {
+  color: rgb(98, 110, 113);
+}
+
+#side-menu-div a.active {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1000px) {
+  #side-menu-div {
+    transition: 0s;
+    visibility: hidden;
+  }
+}
+
+.logout-button {
+  opacity: 70%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-button:hover {
+  opacity: 100%;
+}
+
+.navbar {
+  position: absolute;
+  right: 30px;
+  margin-top: 3px;
+  height: 27px;
+  width: 27px;
+}
+
+#logout-div {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#logout-div hr {
+  margin-bottom: 10px;
+}
+
+.side {
+  margin-left: 0px;
+  position: absolute;
+  left: 25px;
+}
+
+#side-menu-div img {
+  height: 23px;
+  width: 23px;
+  margin-top: 10px;
+}

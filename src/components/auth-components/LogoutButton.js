@@ -9,6 +9,7 @@ const LogoutButton = ({ tag }) => {
   const [modalMessage, setModalMessage] = useState('');
 
   const handleLogout = async () => {
+    logout()
     const response = await signOut();
     if (response.message) {
       logout();
