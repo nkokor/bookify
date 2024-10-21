@@ -1,0 +1,92 @@
+.login-message {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Londrina Sketch";
+}
+
+.toggle-div {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+  width: 350px; 
+  margin: auto;
+}
+
+.auth-input-div {
+  font-family: "Raleway";
+}
+
+.auth-input-div label {
+  font-size: 0.875rem; 
+  margin-bottom: 0.25rem; 
+  color: #555; 
+  transition: color 0.3s; 
+}
+
+.auth-input-div .input-container {
+  position: relative; 
+}
+
+.auth-input-div input {
+  border: none; 
+  border-bottom: 2px solid #ccc;
+  outline: none; 
+  padding: 0.5rem 0; 
+  width: 100%; 
+  font-size: 1rem; 
+  transition: border-bottom-color 0.3s; 
+}
+
+.auth-input-div input:focus {
+  border-bottom-color: #b22222; 
+}
+
+.auth-input-div input:focus + label {
+  color: #b22222; 
+}
+
+.auth-input-div .input-container input:focus + label {
+  transform: translateY(-1.5rem); 
+  font-size: 0.75rem; 
+  color: #b22222;
+}
+
+.p-button {
+  cursor: pointer;
+  opacity: 70%;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.p-button:hover {
+  opacity: 100%;
+}
+
+.forgot-pass-div p {
+  text-align: center;
+}
+
+.auth-form button {
+  border: none;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 15px;
+  width: 200px;
+  margin: auto;
+  opacity: 70%;
+  transition: 0.3s ease;
+  cursor: pointer;
+  background-color: #eeeae7;
+}
+
+.auth-form button:hover {
+  opacity: 100%;
+}
